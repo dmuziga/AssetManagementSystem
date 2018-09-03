@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="EOHAssetManagement:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="EOHAssetManagement.war">
+      <element id="artifact" artifact-name="EOHAssetManagement:war exploded" />
+    </root>
+  </artifact>
+</component>

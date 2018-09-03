@@ -3,7 +3,7 @@ package com.eoh.asset.entity;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name="employee")
@@ -49,10 +49,10 @@ public class Employee {
 
     //one employee may have many Asset
 
-  /*  @OneToMany(mappedBy = "employee",
+  @OneToMany(mappedBy = "employee",
                 cascade = {CascadeType.PERSIST,CascadeType.MERGE,
                            CascadeType.DETACH,CascadeType.REFRESH})
-    private List<Asset> assets;*/
+  private Set<Asset> assetSet;
 
 
     public Employee() {
@@ -131,6 +131,14 @@ public class Employee {
         this.assets = assets;
     }
 */
+
+    public Set<Asset> getAssetSet() {
+        return assetSet;
+    }
+
+    public void setAssetSet(Set<Asset> assetSet) {
+        this.assetSet = assetSet;
+    }
 
     @Override
     public String toString() {

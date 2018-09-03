@@ -110,10 +110,10 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
         Session currentSession= sessionFactory.getCurrentSession();
 
-        // 2. Query the DB  to return the Employee
+        // 2. Query the DB  to return Employees
 
         org.hibernate.query.Query<Employee> theQuery =
-                currentSession.createQuery( "FROM employee",Employee.class);
+                currentSession.createQuery( "FROM Employee",Employee.class);
         //3. Execute the Query
 
         List<Employee> employees = theQuery.getResultList();

@@ -2,6 +2,7 @@ package com.eoh.asset.entity;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "asset")
@@ -44,6 +45,7 @@ public class Asset {
             CascadeType.DETACH,CascadeType.REFRESH})
     @JoinColumn(name="AssetCategory")
     private AssetCategory assetcategory;
+
 
 
     public Asset() {
@@ -128,6 +130,8 @@ public class Asset {
     public void setAssetcategory(AssetCategory assetcategory) {
         this.assetcategory = assetcategory;
     }
+
+
 
     @Override
     public String toString() {

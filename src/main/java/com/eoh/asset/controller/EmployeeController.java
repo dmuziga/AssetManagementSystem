@@ -67,7 +67,7 @@ public class EmployeeController {
             logger.warning("Please fill in the required info");
 
 
-            return "register-form";
+            return "employeeRegistration-form";
 
         }
 

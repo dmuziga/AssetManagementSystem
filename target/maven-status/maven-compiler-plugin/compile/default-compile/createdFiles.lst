@@ -3,6 +3,7 @@ com\eoh\asset\service\EmployeeServiceImple.class
 com\eoh\asset\config\DispactcherServletInitializer.class
 com\eoh\asset\dao\EmployeeDAO.class
 com\eoh\asset\dao\EmployeeDAOImpl.class
+com\eoh\asset\entity\RegisterAsset.class
 com\eoh\asset\entity\Employee_role.class
 com\eoh\asset\controller\TestController.class
 com\eoh\asset\entity\AssetCategory.class
