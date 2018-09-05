@@ -47,75 +47,22 @@ public class AssetController {
    private AssetService assetService;
 
 
-/*
-
-    @GetMapping("/showAssetForm")
-    public String showAssetForm(ModelMap theModel){
-
-        List<Employee> employees = employeeService.getEmployees();
-        List<AssetCategory> categories = assetCategoryService.assetCategries();
-
-        System.out.println(employees);
-
-
-
-        theModel.addAttribute("employeeList", employees);
-
-        //import the Asset Category Model
-
-        theModel.addAttribute("assetCategories", categories);
-
-
-        //import the asset Model
-        theModel.addAttribute("newAsset", new Asset());
-
-        return "showAssetForm";
-    }
-*/
-
-
-
-
-
     @GetMapping("/showAssetForm")
     public ModelAndView getAddAsset(){
 
-
+        // create a model view Object with three parameter View Name , the Model Name and the Object to create Asset
         ModelAndView modelAndView = new ModelAndView("showAssetForm","newAsset",new Asset());
 
-        Map<Employee,String> employeeMap= new HashMap<Employee,String>();
-        Map<AssetCategory,String> assetCategoryMap = new HashMap<AssetCategory, String>();
-
+        //get  the list of employee
         List<Employee> employees = employeeService.getEmployees();
 
-
+        //get the Category Asset
         List<AssetCategory> assetCategories = assetCategoryService.assetCategries();
-
-
-
-        if (employees!=null && !employees.isEmpty()){
-
-            for(Employee employee: employees){
-
-                employeeMap.put(employee,employee.getFirstName());
-            }
-
-        }
-
-        if (assetCategories!=null && !assetCategories.isEmpty()){
-
-            for(AssetCategory assetCategory:assetCategories ){
-
-                assetCategoryMap.put(assetCategory,assetCategory.getCategoryname());
-            }
-
-        }
 
 
         modelAndView.addObject("employeeList",employees);
         modelAndView.addObject("assetCategoryList",assetCategories);
 
-        /*modelAndView.addAllObjects(new Map<"employeeList",employees>, "assetCategoryList",assetCategories);*/
 
         return modelAndView;
     }
@@ -124,8 +71,6 @@ public class AssetController {
     @PostMapping("/processingAssetForm")
     public String processingAssetFrom(
             @Valid @ModelAttribute ("newAsset")Asset theAsset,
-           /* @Valid @ModelAttribute ("theEmp") Employee theEmployee,
-            @Valid @ModelAttribute ("theAsset")AssetCategory theAssetCategory,*/
             BindingResult bindingResult,
             Model theModel){
 

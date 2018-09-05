@@ -59,7 +59,7 @@
                 </form:form>
 
                 </li>
-                <li><a href="#">Profile</a></li>
+                <li><a class="nav-link" href="#"><security:authentication property="principal.username"/> </a>/li>
             </ul>
 
             <form class="navbar-form navbar-right">

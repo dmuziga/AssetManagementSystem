@@ -2,36 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bc78c68-d925-4fe7-8210-96022d29e117" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eoh/asset/dao/AssetCategoryDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eoh/asset/dao/AssetCategoryDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eoh/asset/service/AssetCategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eoh/asset/service/AssetCategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eoh/asset/controller/AssetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eoh/asset/controller/AssetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eoh/asset/dao/AssetDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eoh/asset/dao/AssetDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eoh/asset/dao/AssetDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eoh/asset/dao/AssetDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eoh/asset/dao/EmployeeDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eoh/asset/dao/EmployeeDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eoh/asset/entity/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eoh/asset/entity/Asset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eoh/asset/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eoh/asset/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eoh/asset/entity/RegisterAsset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eoh/asset/entity/RegisterAsset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/homePage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/homePage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showAssetForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showAssetForm.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/EOHAssetManagement.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/EOHAssetManagement.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/EOHAssetManagement/WEB-INF/classes/com/eoh/asset/controller/AssetController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/EOHAssetManagement/WEB-INF/classes/com/eoh/asset/controller/AssetController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/EOHAssetManagement/WEB-INF/classes/com/eoh/asset/dao/AssetDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/EOHAssetManagement/WEB-INF/classes/com/eoh/asset/dao/AssetDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/EOHAssetManagement/WEB-INF/classes/com/eoh/asset/dao/EmployeeDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/EOHAssetManagement/WEB-INF/classes/com/eoh/asset/dao/EmployeeDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/EOHAssetManagement/WEB-INF/classes/com/eoh/asset/entity/Asset.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/EOHAssetManagement/WEB-INF/classes/com/eoh/asset/entity/Asset.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/EOHAssetManagement/WEB-INF/classes/com/eoh/asset/entity/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/EOHAssetManagement/WEB-INF/classes/com/eoh/asset/entity/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/EOHAssetManagement/WEB-INF/classes/com/eoh/asset/entity/RegisterAsset.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/EOHAssetManagement/WEB-INF/classes/com/eoh/asset/entity/RegisterAsset.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/EOHAssetManagement/WEB-INF/view/homePage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/EOHAssetManagement/WEB-INF/view/homePage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/EOHAssetManagement/WEB-INF/view/showAssetForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/EOHAssetManagement/WEB-INF/view/showAssetForm.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/eoh/asset/controller/AssetController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eoh/asset/controller/AssetController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/eoh/asset/dao/AssetDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eoh/asset/dao/AssetDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/eoh/asset/dao/EmployeeDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eoh/asset/dao/EmployeeDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/eoh/asset/entity/Asset.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eoh/asset/entity/Asset.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/eoh/asset/entity/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eoh/asset/entity/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/eoh/asset/entity/RegisterAsset.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/eoh/asset/entity/RegisterAsset.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.EOH.demo.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.EOH.demo.AppTest.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,16 +22,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AssetController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AssetController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eoh/asset/controller/AssetController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="128" column="30" lean-forward="true" selection-start-line="128" selection-start-column="30" selection-end-line="128" selection-end-column="30" />
+            <state relative-caret-position="582">
+              <caret line="103" selection-start-line="103" selection-end-line="103" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2224#2241#0" expanded="true" />
-                <element signature="e#2347#2370#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeLogin.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/HomeLogin.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-478" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homePage.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/homePage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="70" column="29" lean-forward="true" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -60,17 +53,8 @@
       <file leaf-file-name="InvocableHandlerMethod.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
+            <state relative-caret-position="2575">
               <caret line="121" selection-start-line="121" selection-end-line="121" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServletInvocableHandlerMethod.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="73" selection-start-line="73" selection-end-line="73" />
             </state>
           </provider>
         </entry>
@@ -78,7 +62,7 @@
       <file leaf-file-name="RequestMappingHandlerAdapter.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
+            <state relative-caret-position="9925">
               <caret line="495" selection-start-line="495" selection-end-line="495" />
             </state>
           </provider>
@@ -87,7 +71,7 @@
       <file leaf-file-name="AbstractHandlerMethodAdapter.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
+            <state relative-caret-position="575">
               <caret line="39" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
@@ -96,7 +80,7 @@
       <file leaf-file-name="DispatcherServlet.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
+            <state relative-caret-position="9500">
               <caret line="430" selection-start-line="430" selection-end-line="430" />
             </state>
           </provider>
@@ -105,8 +89,8 @@
       <file leaf-file-name="showAssetForm.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showAssetForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="212" selection-start-line="212" selection-end-line="212" />
+            <state relative-caret-position="450">
+              <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -114,7 +98,7 @@
       <file leaf-file-name="AssetCategory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eoh/asset/entity/AssetCategory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8">
+            <state relative-caret-position="350">
               <caret line="14" column="31" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="31" />
               <folding>
                 <element signature="e#397#398#0" expanded="true" />
@@ -126,24 +110,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Employee.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eoh/asset/entity/Employee.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1468#1469#0" expanded="true" />
-                <element signature="e#1493#1494#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Asset.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eoh/asset/entity/Asset.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
+            <state relative-caret-position="1425">
               <caret line="62" selection-start-line="62" selection-end-line="62" />
               <folding>
                 <element signature="e#3096#3097#0" expanded="true" />
@@ -183,6 +153,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/eoh/asset/service/AssetCategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showAssetForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/eoh/asset/controller/AssetController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/homePage.jsp" />
       </list>
     </option>
   </component>
@@ -235,8 +206,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -488,11 +459,12 @@
       <workItem from="1535718901281" duration="17285000" />
       <workItem from="1535909300920" duration="2659000" />
       <workItem from="1535946007386" duration="22117000" />
+      <workItem from="1536122480036" duration="2115000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52134000" />
+    <option name="totallyTimeSpent" value="54249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -516,11 +488,11 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32960895" />
       <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32960895" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2707889" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2707889" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
@@ -532,6 +504,41 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32960895" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32960895" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32960895" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.13965885" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2707889" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32960895" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -614,13 +621,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/employeeRegistration-form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2400">
-          <caret line="96" selection-start-line="96" selection-end-line="101" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eoh/asset/entity/Asset.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2100">
@@ -638,8 +638,6 @@
           <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2224#2241#0" expanded="true" />
-            <element signature="e#2347#2370#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -685,8 +683,6 @@
           <caret line="19" column="28" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1468#1469#0" expanded="true" />
-            <element signature="e#1493#1494#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -749,8 +745,6 @@
           <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1468#1469#0" expanded="true" />
-            <element signature="e#1493#1494#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -760,13 +754,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/register-form.jsp">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/homePage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="76" column="70" selection-start-line="76" selection-start-column="70" selection-end-line="76" selection-end-column="82" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/testEmployee.jsp">
       <provider selected="true" editor-type-id="text-editor" />
@@ -785,13 +772,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eoh/asset/dao/AssetCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eoh/asset/dao/AssetCategory.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eoh/asset/service/EmployeeService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -848,10 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-244">
           <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding>
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -927,43 +904,41 @@
           <caret line="14" column="18" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1468#1469#0" expanded="true" />
-            <element signature="e#1493#1494#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
+        <state relative-caret-position="1100">
           <caret line="73" selection-start-line="73" selection-end-line="73" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
+        <state relative-caret-position="9925">
           <caret line="495" selection-start-line="495" selection-end-line="495" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
+        <state relative-caret-position="575">
           <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
+        <state relative-caret-position="9500">
           <caret line="430" selection-start-line="430" selection-end-line="430" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eoh/asset/entity/AssetCategory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
+        <state relative-caret-position="350">
           <caret line="14" column="31" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="31" />
           <folding>
             <element signature="e#397#398#0" expanded="true" />
@@ -974,9 +949,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2575">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eoh/asset/entity/Asset.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
+        <state relative-caret-position="1425">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
           <folding>
             <element signature="e#3096#3097#0" expanded="true" />
@@ -987,27 +969,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showAssetForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="212" selection-start-line="212" selection-end-line="212" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        <state relative-caret-position="450">
+          <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eoh/asset/controller/AssetController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="128" column="30" lean-forward="true" selection-start-line="128" selection-start-column="30" selection-end-line="128" selection-end-column="30" />
+        <state relative-caret-position="582">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2224#2241#0" expanded="true" />
-            <element signature="e#2347#2370#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/HomeLogin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-478" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/homePage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="70" column="29" lean-forward="true" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
         </state>
       </provider>
     </entry>
