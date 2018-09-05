@@ -29,14 +29,9 @@ public class AssetDAOImpl implements AssetDAO{
     @Override
     public void saveAsset(Asset asset) {
 
+        //get current session
+
         Session currentSession = sessionFactory.getCurrentSession();
-
-        // 1. Retrieve the Employee  that will own the Asset
-
-        asset.setEmployee(getAssetOwner(1));
-        // 2. retrieve what category the Asset is
-        asset.setAssetcategory(getAssetCategory(1));
-        // 3. set the Category and the Employee to Asset
 
         currentSession.saveOrUpdate(asset);
 

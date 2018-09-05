@@ -44,7 +44,13 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
     @Override
     public Employee getEmployee(int theId) {
-        return null;
+
+        Session currentSession = sessionFactory.getCurrentSession();
+
+        Employee theEmployee = currentSession.get(Employee.class,theId);
+
+
+        return theEmployee;
     }
 
     @Override

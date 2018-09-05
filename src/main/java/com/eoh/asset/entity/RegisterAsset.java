@@ -1,8 +1,7 @@
 package com.eoh.asset.entity;
 
 
-import com.eoh.asset.service.EmployeeService;
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Component;
 
 @Component

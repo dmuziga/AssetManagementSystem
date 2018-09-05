@@ -1,10 +1,10 @@
 package com.eoh.asset.dao;
 
-import com.eoh.asset.entity.Asset;
-import com.eoh.asset.entity.Employee;
-import org.springframework.stereotype.Repository;
+        import com.eoh.asset.entity.Asset;
+        import com.eoh.asset.entity.Employee;
+        import org.springframework.stereotype.Repository;
 
-import java.util.List;
+        import java.util.List;
 
 
 public interface AssetDAO {

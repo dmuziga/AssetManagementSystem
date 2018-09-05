@@ -1,6 +1,9 @@
 package com.eoh.asset.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.sql.Date;
 import java.util.List;
 
@@ -14,27 +17,39 @@ public class Asset {
     @Column(name = "AssetId")
     private int assetId;
 
+    @NotNull(message = "is required")
+    @Size(min = 1, message = "is required")
     @Column(name = "Manufacture")
     private String manufacture;
 
+    @NotNull(message = "is required")
+    @Size(min = 1, message = "is required")
     @Column(name ="Model")
     private String model;
 
+    @NotNull(message = "is required")
+    @Size(min = 1, message = "is required")
     @Column(name="SerialNumber")
     private String serialNumber;
 
+    @NotNull(message = "is required")
     @Column(name="AcquiredDate")
     private Date acquiredDate;
 
-
+    @NotNull(message = "is required")
     @Column(name="PurchasePrice")
     private double purchasePrice;
 
+    @NotNull(message = "is required")
+    @Size(min = 1, message = "is required")
     @Column(name="Description")
     private String description;
 
+    @NotNull(message = "is required")
+    @Size(min = 1, message = "is required")
     @Column (name ="Comments")
     private String comments;
+
 
     @ManyToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE,
             CascadeType.DETACH,CascadeType.REFRESH})

@@ -48,11 +48,13 @@ public class Employee {
     private Employee_role employeeRole;
 
     //one employee may have many Asset
+/*
 
   @OneToMany(mappedBy = "employee",
                 cascade = {CascadeType.PERSIST,CascadeType.MERGE,
                            CascadeType.DETACH,CascadeType.REFRESH})
   private Set<Asset> assetSet;
+*/
 
 
     public Employee() {
@@ -132,6 +134,7 @@ public class Employee {
     }
 */
 
+/*
     public Set<Asset> getAssetSet() {
         return assetSet;
     }
@@ -139,6 +142,7 @@ public class Employee {
     public void setAssetSet(Set<Asset> assetSet) {
         this.assetSet = assetSet;
     }
+*/
 
     @Override
     public String toString() {
