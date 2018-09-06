@@ -13,10 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
@@ -68,6 +65,10 @@ public class AssetController {
     }
 
 
+
+
+
+
     @PostMapping("/processingAssetForm")
     public String processingAssetFrom(
             @Valid @ModelAttribute ("newAsset")Asset theAsset,
@@ -88,27 +89,37 @@ public class AssetController {
 
         if(bindingResult.hasErrors()){
 
-            theModel.addAttribute("newAsset", new Asset());
-            theModel.addAttribute("assetRegistrationError", "Field Cannot be empty");
 
-            return "showAssetForm";
+            theModel.addAttribute("assetRegistrationError", "Field Cannot be empty");
+            theModel.addAttribute("newAsset", new Asset());
+
+            return "redirect:/asset/showAssetForm";
         }
 
         // if not empty please save the new Asset
 
         assetService.saveAsset(theAsset);
 
-        return "homePage";
+        return "redirect:/homePage";
 
     }
 
+    @GetMapping("/showAssetForUpdate")
+    public String showAssetForUpdate(@RequestParam("assetId")int theAssetId,
+                                     Model theModel){
+
+        //get the asset using the AssetId
+
+        Asset theUpdatedAsset = assetService.getAsset(theAssetId);
+
+        // add the asset to the Model
+
+        theModel.addAttribute("newAsset",theUpdatedAsset);
 
 
+        return "showAssetForm";
 
 
-
-
-
-
+    }
 
 }

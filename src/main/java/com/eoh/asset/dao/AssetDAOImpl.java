@@ -37,6 +37,28 @@ public class AssetDAOImpl implements AssetDAO{
 
     }
 
+    @Override
+    public List<Asset> listAssets() {
+        // 1. get the current Session
+
+        Session currentSession = sessionFactory.getCurrentSession();
+
+        //2. write the Query to get retrieve all the Asset in the DB
+
+        org.hibernate.query.Query<Asset> theQuery = currentSession.
+                createQuery("FROM Asset",Asset.class);
+
+        //3. Get the result
+
+        List<Asset> listOfAssets= theQuery.getResultList();
+
+
+
+        //4 return the List of Asset
+
+        return listOfAssets;
+    }
+
 
     //create the method to retrieve the employee
 
@@ -76,8 +98,19 @@ public class AssetDAOImpl implements AssetDAO{
 
     }
 
+    @Override
+    public Asset getAsset(int Assetid) {
 
-    // this method return the number of employee in the database
+        //1.get the Current connection
 
+        Session currentSession = sessionFactory.getCurrentSession();
 
+        //2 query the Asset Form and return the asset based on the AssetID
+
+        Asset theAsset = currentSession.get(Asset.class,Assetid);
+
+        //return the Asset ID
+
+        return theAsset;
+    }
 }

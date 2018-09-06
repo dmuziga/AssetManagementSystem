@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 @Service
 public class AssetServiceImpl implements AssetService {
@@ -15,6 +16,11 @@ public class AssetServiceImpl implements AssetService {
     @Autowired
     private AssetDAO assetDao;
 
+    @Override
+    @Transactional
+    public List<Asset> listAssets() {
+        return assetDao.listAssets();
+    }
 
     @Override
     @Transactional
@@ -22,6 +28,11 @@ public class AssetServiceImpl implements AssetService {
 
 
         assetDao.saveAsset(theAsset);
+    }
 
-}
+
+    @Override
+    public Asset getAsset(int id) {
+        return assetDao.getAsset(id);
+    }
 }

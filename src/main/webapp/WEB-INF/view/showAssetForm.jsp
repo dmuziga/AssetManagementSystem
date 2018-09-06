@@ -51,9 +51,9 @@
                               <!-- Check for registration error -->
                               <c:if test="${assetRegistrationError != null}">
 
-                                  <div class="alert alert-danger col-xs-offset-1 col-xs-10">
+                                 <%-- <div class="alert alert-danger col-xs-offset-1 col-xs-10">--%>
                                           ${assetRegistrationError}
-                                  </div>
+                                  <%--</div>--%>
 
                               </c:if>
 
