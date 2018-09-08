@@ -35,4 +35,11 @@ public class AssetServiceImpl implements AssetService {
     public Asset getAsset(int id) {
         return assetDao.getAsset(id);
     }
+
+    @Override
+    @Transactional
+    public void deleteAsset(int id) {
+
+        assetDao.deleteAsset(id);
+    }
 }

@@ -41,7 +41,10 @@
                 <!-- Registration Form -->
               <form:form action="${pageContext.request.contextPath}/asset/processingAssetForm"
                            modelAttribute="newAsset"
+                            method="post"
                            class="form-horizontal">
+
+                  <form:hidden path="assetId" />
 
                   <!-- Place for messages: error, alert etc ... -->
                   <div class="form-group">
@@ -51,9 +54,9 @@
                               <!-- Check for registration error -->
                               <c:if test="${assetRegistrationError != null}">
 
-                                 <%-- <div class="alert alert-danger col-xs-offset-1 col-xs-10">--%>
+                                  <div class="alert alert-danger col-xs-offset-1 col-xs-10">
                                           ${assetRegistrationError}
-                                  <%--</div>--%>
+                                  </div>
 
                               </c:if>
 

@@ -56,17 +56,14 @@ public class AssetController {
         //get the Category Asset
         List<AssetCategory> assetCategories = assetCategoryService.assetCategries();
 
-
         modelAndView.addObject("employeeList",employees);
         modelAndView.addObject("assetCategoryList",assetCategories);
+
+        logger.info(employees.toString());
 
 
         return modelAndView;
     }
-
-
-
-
 
 
     @PostMapping("/processingAssetForm")
@@ -80,8 +77,10 @@ public class AssetController {
 
         Employee newAssetEmployee = theAsset.getEmployee();
 
-        // display the logger
+        int assetFount = theAsset.getAssetId();
 
+        // display the logger
+        logger.info("the new Manufacture name is " +  assetFount);
         logger.info("the new Manufacture name is " +  newAssetEmployee.getFirstName());
 
 
@@ -92,7 +91,6 @@ public class AssetController {
 
             theModel.addAttribute("assetRegistrationError", "Field Cannot be empty");
             theModel.addAttribute("newAsset", new Asset());
-
             return "redirect:/asset/showAssetForm";
         }
 
@@ -112,14 +110,38 @@ public class AssetController {
 
         Asset theUpdatedAsset = assetService.getAsset(theAssetId);
 
+
+
+        //get  the list of employee
+        List<Employee> employees = employeeService.getEmployees();
+
+        //get the Category Asset
+        List<AssetCategory> assetCategories = assetCategoryService.assetCategries();
+
+        //reload the employee list and asset Category
+        theModel.addAttribute("employeeList",employees);
+        theModel.addAttribute("assetCategoryList",assetCategories);
+
+
+
         // add the asset to the Model
 
         theModel.addAttribute("newAsset",theUpdatedAsset);
 
-
         return "showAssetForm";
 
 
+    }
+
+    @GetMapping("/deleteAsset")
+    public String deleteAsset(@RequestParam("assetId")int theAssetId){
+
+       //pass the Asset Id into the Service and delete the Asset
+
+        assetService.deleteAsset(theAssetId);
+
+
+        return "redirect:/homePage";
     }
 
 }

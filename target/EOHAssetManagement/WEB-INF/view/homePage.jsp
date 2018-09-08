@@ -109,6 +109,11 @@
                            <c:param name="assetId" value="${tempAsset.assetId}"/>
                        </c:url>
 
+                       <c:url var="deleteAsset" value="/asset/deleteAsset">
+
+                           <c:param name="assetId" value="${tempAsset.assetId}"/>
+                       </c:url>
+
                         <tr>
                             <td>${tempAsset.manufacture}</td>
                             <td>${tempAsset.model}</td>
@@ -121,10 +126,15 @@
                             <security:authorize access="hasRole('ADMIN')">
                                 <td>
                                         <%--display the update Link for the Asset--%>
-                                    <a href="${updateAsset}">Update</a>
+                                    <a href="${updateAsset}">Update/</a>
+                                    <a href="${deleteAsset}"
+                                       onclick="if(!(confirm('Are you sure you want to delete this Asset?'))) return false">Delete</a>
                                 </td>
 
+
                             </security:authorize>
+
+
 
                         </tr>
 

@@ -12,5 +12,6 @@ public interface AssetDAO {
     public void saveAsset(Asset asset);
     public List<Asset> listAssets();
     public Asset getAsset(int id);
+    public void deleteAsset(int assetid);
 
 }

@@ -113,4 +113,22 @@ public class AssetDAOImpl implements AssetDAO{
 
         return theAsset;
     }
+
+    @Override
+    public void deleteAsset(int assetid) {
+
+        //get the current Sesstion
+
+        Session currentSession = sessionFactory.getCurrentSession();
+
+        //Write and execute the query to delete the Asset
+
+        Query theQuery = currentSession.createQuery("delete from Asset where assetId =:id");
+
+        theQuery.setParameter("id",assetid);
+
+
+        theQuery.executeUpdate();
+
+    }
 }
