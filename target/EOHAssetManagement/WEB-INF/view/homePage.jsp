@@ -8,6 +8,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <html>
 <head>
     <meta charset="utf-8">
@@ -15,13 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home Page</title>
 
-  <%--  <link href="webjars/jquery/3.3.1/jquery.min.js">
-    <link href="webjars/bootstrap/4.1.2/css/bootstrap.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="/resources/css/dashboard.css" rel="stylesheet--%>">
-
-
-    <link rel="stylesheet"
+     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -75,6 +70,8 @@
                 <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
                 <%--<li><a href="${pageContext.request.contextPath}/assets/showAssetForm">Asset</a></li>--%>
                 <li><a href="${pageContext.request.contextPath}/asset/showAssetForm" >Asset</a></li>
+                <li><a href="${pageContext.request.contextPath}/asset/showAssetForm"
+                       data-target="#theModal" data-toggle="modal" >Lab 6</a></li>
 
                 <li><a href="${pageContext.request.contextPath}/employee/registerEmployee">Employee</a></li>
             </ul>
@@ -133,12 +130,7 @@
 
 
                             </security:authorize>
-
-
-
                         </tr>
-
-
                     </c:forEach>
 
                 </table>
@@ -148,34 +140,19 @@
 </div>
 
 
-<%--<h1> Home Page</h1>
-
-<hr>
-
-<a href="${pageContext.request.contextPath}/LoginForm">LOGIN</a>
-
-<security:authorize access="hasRole('ADMIN')">
-
-    <a href="${pageContext.request.contextPath}/assets/listAsset">AssetList</a>
-
-</security:authorize>
-
-
-&lt;%&ndash;adding a logout button &ndash;%&gt;
-
-<form:form action="${pageContext.request.contextPath}/logout" method="post">
-
-    <input type="submit" value="logout" class="add-button"/>
-</form:form>--%>
-
-<%--<div class="modal fade text-center" id="theModal">
-    <div class="modal-dialog">
+<div class="modal fade" id="theModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
         </div>
     </div>
-</div>--%>
-
-
+</div>
 
 <script src="webjars/jquery/3.3.1/jquery.min.js"></script>
 <script src="webjars/bootstrap/4.1.2/js/bootstrap.min.js"></script>

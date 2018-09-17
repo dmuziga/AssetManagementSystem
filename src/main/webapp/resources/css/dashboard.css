@@ -106,3 +106,7 @@ body {
     display: inline-block;
     border-radius: 50%;
 }
+
+label[for='ckbx1'] {
+    font-weight: normal;
+}

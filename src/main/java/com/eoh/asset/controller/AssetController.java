@@ -86,12 +86,22 @@ public class AssetController {
 
         //validation of the Asset form
 
-        if(bindingResult.hasErrors()){
+        if(bindingResult.hasErrors() || newAssetEmployee.getFirstName()==null || theAsset.getAssetcategory() ==null){
 
 
             theModel.addAttribute("assetRegistrationError", "Field Cannot be empty");
+            //get  the list of employee
+            List<Employee> employees = employeeService.getEmployees();
+
+            //get the Category Asset
+            List<AssetCategory> assetCategories = assetCategoryService.assetCategries();
+
+            //reload the employee list and asset Category
+            theModel.addAttribute("employeeList",employees);
+            theModel.addAttribute("assetCategoryList",assetCategories);
+
             theModel.addAttribute("newAsset", new Asset());
-            return "redirect:/asset/showAssetForm";
+            return "showAssetForm";
         }
 
         // if not empty please save the new Asset
@@ -110,8 +120,6 @@ public class AssetController {
 
         Asset theUpdatedAsset = assetService.getAsset(theAssetId);
 
-
-
         //get  the list of employee
         List<Employee> employees = employeeService.getEmployees();
 
@@ -129,8 +137,6 @@ public class AssetController {
         theModel.addAttribute("newAsset",theUpdatedAsset);
 
         return "showAssetForm";
-
-
     }
 
     @GetMapping("/deleteAsset")
