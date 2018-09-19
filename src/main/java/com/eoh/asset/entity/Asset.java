@@ -50,7 +50,7 @@ public class Asset {
     @Column (name ="Comments")
     private String comments;
 
-
+    @NotNull(message = "is required")
     @ManyToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE,
             CascadeType.DETACH,CascadeType.REFRESH})
     @JoinColumn(name="Owner")

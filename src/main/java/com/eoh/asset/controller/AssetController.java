@@ -77,6 +77,10 @@ public class AssetController {
 
         Employee newAssetEmployee = theAsset.getEmployee();
 
+        //retrieve the Category
+
+        AssetCategory assetCategory = theAsset.getAssetcategory();
+
         int assetFount = theAsset.getAssetId();
 
         // display the logger
@@ -84,9 +88,9 @@ public class AssetController {
         logger.info("the new Manufacture name is " +  newAssetEmployee.getFirstName());
 
 
-        //validation of the Asset form
+        //validation of the Asset form  , check ig the employee is selected and if the asset category is not empty
 
-        if(bindingResult.hasErrors() || newAssetEmployee.getFirstName()==null || theAsset.getAssetcategory() ==null){
+        if(bindingResult.hasErrors()|| newAssetEmployee.getId()==-1 || assetCategory.getAssetcategoryid()==-1 ){
 
 
             theModel.addAttribute("assetRegistrationError", "Field Cannot be empty");

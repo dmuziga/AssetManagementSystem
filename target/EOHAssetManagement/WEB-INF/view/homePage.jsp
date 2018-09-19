@@ -22,14 +22,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
     <script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'>
+    <%--<script src="/resources/js/Search.js"></script>--%>
     <link href="/resources/css/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="/resources/css/style.css">
 
 
     <!-- Bootstrap datepicker JS and CSS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css"></link>
-
 
 
 </head>
@@ -56,10 +59,21 @@
                 </li>
                 <li><a class="nav-link" href="#"><security:authentication property="principal.username"/> </a>/li>
             </ul>
+            <div class="navbar-form navbar-right">
+             <input type="text" class="search form-control" placeholder="What you looking for?">
+            </div>
 
-            <form class="navbar-form navbar-right">
-                <input type="text" class="form-control" placeholder="Search...">
-            </form>
+
+
+
+           <%-- <div class="form-group pull-right">
+                <input type="text" class="search form-control" placeholder="What you looking for?">
+            </div>--%>
+
+            <%--    <form class="navbar-form navbar-right">
+              <input type="text" class="form-control" placeholder="Search...">
+          </form>--%>
+
         </div>
     </div>
 </nav>
@@ -70,9 +84,6 @@
                 <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
                 <%--<li><a href="${pageContext.request.contextPath}/assets/showAssetForm">Asset</a></li>--%>
                 <li><a href="${pageContext.request.contextPath}/asset/showAssetForm" >Asset</a></li>
-                <li><a href="${pageContext.request.contextPath}/asset/showAssetForm"
-                       data-target="#theModal" data-toggle="modal" >Lab 6</a></li>
-
                 <li><a href="${pageContext.request.contextPath}/employee/registerEmployee">Employee</a></li>
             </ul>
 
@@ -84,8 +95,10 @@
             <div class="row placeholders">
 
             </div>
-            <div class="table-responsive">
-                <table class="table table-striped">
+               <span class="counter pull-right"></span>
+           <div class="table-responsive">
+                <span class="counter pull-right"></span>
+                <table class="table table-hover table-bordered results">
                     <thead>
                     <tr>
                         <th>Asset Manufacture</th>
@@ -95,46 +108,55 @@
                         <th>Asset Owner</th>
                         <th>Update/Delete</th>
                     </tr>
+                    <tr class="warning no-result">
+                        <td colspan="12"><i class="fa fa-warning"></i> No result</td>
+                    </tr>
                     </thead>
 
-                   <c:forEach var="tempAsset" items="${assets}">
+                    <tbody>
+                        <c:forEach var="tempAsset" items="${assets}">
 
-                       <%--construct an update Link with the Asset Id--%>
+                            <%--construct an update Link with the Asset Id--%>
 
-                       <c:url var="updateAsset" value="/asset/showAssetForUpdate">
+                            <c:url var="updateAsset" value="/asset/showAssetForUpdate">
 
-                           <c:param name="assetId" value="${tempAsset.assetId}"/>
-                       </c:url>
+                                <c:param name="assetId" value="${tempAsset.assetId}"/>
+                            </c:url>
 
-                       <c:url var="deleteAsset" value="/asset/deleteAsset">
+                            <c:url var="deleteAsset" value="/asset/deleteAsset">
 
-                           <c:param name="assetId" value="${tempAsset.assetId}"/>
-                       </c:url>
-
-                        <tr>
-                            <td>${tempAsset.manufacture}</td>
-                            <td>${tempAsset.model}</td>
-                            <td>${tempAsset.acquiredDate}</td>
-                            <td>${tempAsset.assetcategory.categoryname}</td>
-                            <td>${tempAsset.employee.firstName}</td>
-
-                            <%--authorize who can view the Link to update or not--%>
-
-                            <security:authorize access="hasRole('ADMIN')">
-                                <td>
-                                        <%--display the update Link for the Asset--%>
-                                    <a href="${updateAsset}">Update/</a>
-                                    <a href="${deleteAsset}"
-                                       onclick="if(!(confirm('Are you sure you want to delete this Asset?'))) return false">Delete</a>
-                                </td>
+                                <c:param name="assetId" value="${tempAsset.assetId}"/>
+                            </c:url>
 
 
-                            </security:authorize>
-                        </tr>
-                    </c:forEach>
+                            <tr>
+
+                                <td>${tempAsset.manufacture}</td>
+                                <td>${tempAsset.model}</td>
+                                <td>${tempAsset.acquiredDate}</td>
+                                <td>${tempAsset.assetcategory.categoryname}</td>
+                                <td>${tempAsset.employee.firstName}</td>
+
+                                    <%--authorize who can view the Link to update or not--%>
+
+                                <security:authorize access="hasRole('ADMIN')">
+                                    <td>
+                                            <%--display the update Link for the Asset--%>
+                                        <a href="${updateAsset}">Update/</a>
+                                        <a href="${deleteAsset}"
+                                           onclick="if(!(confirm('Are you sure you want to delete this Asset?'))) return false">Delete</a>
+                                    </td>
+
+
+                                </security:authorize>
+                            </tr>
+                        </c:forEach>
+
+
+                    </tbody>
 
                 </table>
-            </div>
+           </div>
         </div>
     </div>
 </div>
@@ -154,8 +176,10 @@
     </div>
 </div>
 
-<script src="webjars/jquery/3.3.1/jquery.min.js"></script>
+<%--<script src="webjars/jquery/3.3.1/jquery.min.js"></script>--%>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="webjars/bootstrap/4.1.2/js/bootstrap.min.js"></script>
 <script src="/resources/js/holder.min.js"></script>
+<script  src="/resources/js/index.js"></script>
 </body>
 </html>
