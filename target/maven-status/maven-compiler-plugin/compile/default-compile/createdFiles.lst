@@ -23,5 +23,7 @@ com\eoh\asset\service\AssetCategoryService.class
 com\eoh\asset\controller\LoginController.class
 com\eoh\asset\service\AssetCategoryServiceImpl.class
 com\eoh\asset\entity\Employee.class
+com\eoh\asset\service\EmailServiceImpl.class
 com\eoh\asset\controller\Home.class
 com\eoh\asset\dao\AssetDAOImpl.class
+com\eoh\asset\service\EmailService.class

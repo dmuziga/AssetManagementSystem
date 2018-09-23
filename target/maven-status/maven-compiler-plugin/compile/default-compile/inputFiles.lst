@@ -3,6 +3,7 @@ E:\PersonalProject\AssetManagementSystem\src\main\java\com\eoh\asset\service\Emp
 E:\PersonalProject\AssetManagementSystem\src\main\java\com\eoh\asset\controller\TestController.java
 E:\PersonalProject\AssetManagementSystem\src\main\java\com\eoh\asset\dao\AssetDAOImpl.java
 E:\PersonalProject\AssetManagementSystem\src\main\java\com\eoh\asset\config\SecurityConfigApplicationInitializer.java
+E:\PersonalProject\AssetManagementSystem\src\main\java\com\eoh\asset\service\EmailService.java
 E:\PersonalProject\AssetManagementSystem\src\main\java\com\eoh\asset\service\AssetService.java
 E:\PersonalProject\AssetManagementSystem\src\main\java\com\eoh\asset\controller\EmployeeController.java
 E:\PersonalProject\AssetManagementSystem\src\main\java\com\eoh\asset\service\AssetCategoryService.java
@@ -23,5 +24,6 @@ E:\PersonalProject\AssetManagementSystem\src\main\java\com\eoh\asset\entity\Empl
 E:\PersonalProject\AssetManagementSystem\src\main\java\com\eoh\asset\entity\AssetCategory.java
 E:\PersonalProject\AssetManagementSystem\src\main\java\com\eoh\asset\entity\RegisterAsset.java
 E:\PersonalProject\AssetManagementSystem\src\main\java\com\eoh\asset\dao\AssetDAO.java
+E:\PersonalProject\AssetManagementSystem\src\main\java\com\eoh\asset\service\EmailServiceImpl.java
 E:\PersonalProject\AssetManagementSystem\src\main\java\com\eoh\asset\entity\Asset.java
 E:\PersonalProject\AssetManagementSystem\src\main\java\com\eoh\asset\controller\AssetController.java

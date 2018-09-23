@@ -7,6 +7,7 @@ import com.eoh.asset.entity.Employee;
 import com.eoh.asset.entity.RegisterAsset;
 import com.eoh.asset.service.AssetCategoryService;
 import com.eoh.asset.service.AssetService;
+import com.eoh.asset.service.EmailService;
 import com.eoh.asset.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,10 +18,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
+import java.util.*;
 import java.util.function.LongFunction;
 import java.util.logging.Logger;
 
@@ -42,6 +40,9 @@ public class AssetController {
 
    @Autowired
    private AssetService assetService;
+
+   @Autowired
+   private EmailService emailService;
 
 
     @GetMapping("/showAssetForm")
@@ -112,7 +113,34 @@ public class AssetController {
 
         assetService.saveAsset(theAsset);
 
+        sendingEmailForAsset(theAsset);
+
         return "redirect:/homePage";
+
+    }
+
+    private void sendingEmailForAsset(Asset asset){
+
+        StringBuilder emailMessage = new StringBuilder();
+
+        int assetOwner = asset.getEmployee().getId();
+
+        Employee employee = employeeService.getEmployee(assetOwner);
+
+
+        emailMessage.append("Assigned Employee: " + employee.getFirstName() + "\n");
+        emailMessage.append("AssetName: " + asset.getManufacture()+ "\n");
+        emailMessage.append(" AssetType: " + asset.getModel()+ "\n");
+        emailMessage.append("Asset SerialNumber: " + asset.getSerialNumber()+ "\n");
+        emailMessage.append("Asset Description: " + asset.getDescription()+ "\n");
+        emailMessage.append("Acquired Date: " + asset.getAcquiredDate()+ "\n");
+
+
+        String sendEmail = emailMessage.toString();
+
+        String subject = "Asset Assigned to " + employee.getFirstName();
+
+        emailService.sendSimpleEmail(employee.getEmail(),subject,sendEmail);
 
     }
 
